@@ -1,10 +1,280 @@
 @import "vars"
 @import "fonts"
+@import "main.scss"
 @import "libs"
 
 /*==========  user style  ==========*/
-.test
+body
+	font-family: 'Exo 2', sans-serif
+	overflow-x: hidden
+
+a
+	transition: .3s
+	&:link
+		outline: none 0
+	&:visited
+		outline: none 0
+	&:hover
+		text-decoration: none
+	&:active
+		outline: none 0
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+
+.btn
+	padding: 20px 30px
+	text-transform: uppercase
+	background-color: $accent
 	color: #000
+	font-weight: 400
+	outline: none 0
+	border: none
+	border-radius: 30px
+	transition: .3s
+	display: inline-block
+	&:hover
+		background-color: #000000
+		color: #ffffff
+
+.ta-c
+	text-align: center
+
+.page-header
+	position: absolute
+	z-index: 9999
+	right: 0
+	left: 0
+	padding: 30px 0 0
+	background-color: rgba(21,21,21,.65)
+	.top-logo
+		img
+			width: 100%
+	.top-navigation
+		ul
+			display: flex
+			justify-content: center
+			li
+				margin: 0 15px
+				padding-bottom: 40px
+				position: relative
+				overflow: hidden
+				a
+					color: #fff
+					text-transform: uppercase
+				&:before
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 5px
+					background-color: $accent
+					width: 100%
+					transform: translateX(-110%)
+					transition: .3s
+				&.active:after
+					position: absolute
+					content: ''
+					bottom: 0
+					height: 5px
+					background-color: $accent
+					width: 100%
+					left: 0
+				&:hover:before
+					transform: translateX(0)
+	address
+		font-size: 17px
+		text-align: right
+		a
+			color: #fff
+		i
+			color: $accent
+
+.banner-show
+	height: 100vh
+	position: relative
+	display: flex
+	align-items: center
+	overflow: hidden
+	&-img
+		position: absolute
+		left: -100px
+		right: -100px
+		bottom: -100px
+		top: -100px
+		animation: bunner-img 10s infinite
+	&-content
+		h2
+			font-size: 75px
+			text-transform: capitalize
+			line-height: 1.2
+		p
+			font-size: 22px
+			margin: 40px 0
+
+.repairs
+	padding: 90px 0
+	&-item
+		position: relative
+		padding: 100px 40px 30px
+		text-align: center
+		&:before
+			position: absolute
+			font-family: 'icon'
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			font-size: 70px
+			color: #1d81de
+			opacity: 1
+		a
+			color: #000
+			transition: .3s
+			text-transform: capitalize
+			font-size: 20px
+			&:hover
+				color: #1d81de
+	.repairs-item-inner:nth-child(1)
+		.repairs-item
+			&:before
+				content: "\61"
+			&:after
+				position: absolute
+				content: ''
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 0 10px 18px
+				border-color: transparent transparent #ffe146 transparent
+				transform: rotate(137.76deg) translate(0,0)
+				will-change: transform
+				transition: all .6s
+				top: 40px
+				left: 55%
+				opacity: .9
+			&:hover:after
+				top: 20px
+				left: 50%
+				transform: rotate(60deg)
+	.repairs-item-inner:nth-child(2)
+		.repairs-item
+			&:before
+				content: "\62"
+			&:after
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				background: #ffe146
+				transform: translate(0,0)
+				will-change: transform
+				transition: all .6s
+				position: absolute
+				content: ''
+				top: 40px
+				left: 55%
+				opacity: .8
+			&:hover:after
+				left: 40%
+	.repairs-item-inner:nth-child(3)
+		.repairs-item
+			&:before
+				content: "\63"
+			&:after
+				width: 16px
+				height: 16px
+				transform: translateY(0) rotate(45deg)
+				will-change: transform
+				transition: all .6s
+				background: #ffe146
+				position: absolute
+				content: ''
+				top: 40px
+				left: 55%
+				opacity: .9
+			&:hover:after
+				left: 40%
+				transform: rotate(180deg)
+	.repairs-item-inner:nth-child(4)
+		.repairs-item
+			&:before
+				content: "\64"
+			&:after
+				width: 20px
+				height: 20px
+				border-radius: 50%
+				background: #ffe146
+				transform: translate(0,0)
+				will-change: transform
+				transition: all .6s
+				position: absolute
+				content: ''
+				top: 40px
+				left: 55%
+				opacity: .9
+			&:hover:after
+				left: 40%
+	.repairs-item-inner:nth-child(5)
+		.repairs-item
+			&:before
+				content: "\65"
+			&:after
+				width: 16px
+				height: 16px
+				transform: translateY(0) rotate(45deg)
+				will-change: transform
+				transition: all .6s
+				background: #ffe146
+				position: absolute
+				content: ''
+				top: 40px
+				left: 55%
+				opacity: .9
+			&:hover:after
+				left: 40%
+				transform: rotate(180deg)
+	.repairs-item-inner:nth-child(6)
+		.repairs-item
+			&:before
+				content: "\66"
+			&:after
+				position: absolute
+				content: ''
+				width: 0
+				height: 0
+				border-style: solid
+				border-width: 0 10px 18px
+				border-color: transparent transparent #ffe146 transparent
+				transform: rotate(137.76deg) translate(0,0)
+				will-change: transform
+				transition: all .6s
+				top: 40px
+				left: 55%
+				opacity: .9
+			&:hover:after
+				top: 20px
+				left: 50%
+				transform: rotate(60deg)
 /*==========  user style  ==========*/
+
+
+
+
+
+=keyframes($animation-name)
+  @-webkit-keyframes #{$animation-name}
+    @content
+  @-moz-keyframes #{$animation-name}
+    @content
+  @keyframes #{$animation-name}
+    @content
+
+@keyframes bunner-img
+	0% 
+		transform: rotate(0deg)
+	50% 
+		transform: rotate(1deg) scale(1.02)
+	100%
+		transform: rotate(0deg)
+
 
 @import "media" // Always at the end
