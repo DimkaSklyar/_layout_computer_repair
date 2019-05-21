@@ -12,12 +12,16 @@ a
 	transition: .3s
 	&:link
 		outline: none 0
+		border: none
 	&:visited
 		outline: none 0
+		border: none
 	&:hover
 		text-decoration: none
+		border: none
 	&:active
 		outline: none 0
+		border: none
 ul
 	list-style-type: none
 	margin: 0
@@ -275,6 +279,7 @@ section
 
 .service
 	background-color: #37383e
+	padding: 90px 0 130px
 	&-item
 		transition: .3s
 		position: relative
@@ -333,6 +338,7 @@ section
 
 .price-section
 	background-color: #f5f5f5
+	padding: 90px 0 130px
 	.price-wrapper
 		.price-table-head
 			width: 100%
@@ -403,6 +409,7 @@ section
 						position: relative
 
 .testimonials
+	padding: 90px 0 180px
 	&-item
 		position: relative
 		width: 780px
@@ -494,6 +501,7 @@ section
 
 .brands
 	background-color: #f5f5f5
+	padding: 90px 0 130px
 	.container
 		text-align: center
 		& > p
@@ -628,6 +636,56 @@ section.map
 	margin: 0 auto
 .pl-80
 	padding-left: 80px
+
+
+#small-dialog
+	max-width: 400px
+	background-color: #f5f5f5
+	padding: 40px 30px 20px
+	border-radius: 15px
+	text-align: center
+	input
+		display: block
+		width: 100%
+		min-height: 60px
+		padding: 16px 25px
+		font-size: 15px
+		font-weight: 300
+		line-height: 26px
+		color: #151515
+		background-color: #fff
+		background-image: none
+		border-radius: 5px
+		transition: .3s ease-in-out
+		border: 1px solid #c4c4c4
+		margin-bottom: 20px
+	textarea
+		display: block
+		width: 100%
+		min-height: 60px
+		padding: 16px 25px
+		font-size: 15px
+		font-weight: 300
+		line-height: 26px
+		color: #151515
+		background-color: #fff
+		background-image: none
+		border-radius: 5px
+		transition: .3s ease-in-out
+		border: 1px solid #c4c4c4
+		margin-bottom: 20px
+	#message-rezult
+		text-align: center
+		button
+			margin-bottom: 0
+			cursor: pointer
+			padding: 15px 65px
+			cursor: pointer
+
+button:focus
+	outline: none 0 !important
+	border: none
+	
 =keyframes($animation-name)
   @-webkit-keyframes #{$animation-name}
     @content

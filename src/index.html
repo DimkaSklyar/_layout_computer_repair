@@ -30,6 +30,7 @@
 							<li class="active"><a href="index.html">Главная</a></li>
 							<li><a href="repairs.html">Ремонт</a></li>
 							<li><a href="service.html">Сервис</a></li>
+							<li><a href="price.html">Прайс-лист</a></li>
 							<li><a href="about.html">О нас</a></li>
 							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
@@ -52,7 +53,7 @@
 					<div class="banner-show-content col-6">
 						<h2>FixPC - Мы всё исправим</h2>
 						<p>FixPC предоставляет широкий спектр услуг по ремонту ваших гаджетов и различных устройств.</p>
-						<a href="#" class="btn">Записать на ремонт</a>
+						<a href="#small-dialog" class="btn popup-with-zoom-anim" >Записать на ремонт</a>
 					</div>
 				</div>
 			</div>
@@ -858,10 +859,10 @@
 			</div>
 		</section>
 
-		<!-- <section class="map">
+		<section class="map">
 			<script type="text/javascript" charset="utf-8" async
 				src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adf75547cd1df096ef785d32b8b6a0e821e4ac467801f1a439be012164bd062c3&amp;width=100%25&amp;height=530&amp;lang=ru_RU&amp;scroll=false"></script>
-		</section> -->
+		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="container">
@@ -884,10 +885,11 @@
 						<div class="col-12">
 							<div class="subscribe">
 								<h3>Подписаться и быть в курсе</h3>
-								<form class="form-subscribe">
-									<input type="email" name="email" id="email" required placeholder="E-mail">
-									<button type="submit" class="btn">Подписаться</button>
+								<form id="form-subscribe" class="form-subscribe">
+									<input type="email" name="email" id="sub-mail" required placeholder="E-mail">
+									<button type="submit" class="btn" form="form-subscribe">Подписаться</button>
 								</form>
+								<div id="rezult"></div>
 							</div>
 						</div>
 						<div class="col-6">
@@ -924,6 +926,18 @@
 			</div>
 		</div>
 	</footer>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+			<h1>Запись на ремонт</h1>
+			<form id="order">
+				<input type="text" name="name" id="name" required placeholder="Имя">
+				<input type="tel" name="phone" id="phone" required placeholder="Телефон">
+				<textarea name="comment" id="comment" cols="30" rows="6" required placeholder="Пожалуйста опишите вашу проблему"></textarea>
+			</form>
+			<div id="message-rezult">
+				<button type="submit" form="order" class="btn btn-submit">Записаться</button>
+			</div>
+		</div>
 	<script src="js/scripts.min.js"></script>
 </body>
 
