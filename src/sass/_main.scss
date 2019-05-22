@@ -2,8 +2,8 @@
 
 @font-face {
   font-family: "untitled-font-1";
-  src: url("fonts/untitled-font-1.eot");
-  src: url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
     url("fonts/untitled-font-1.woff") format("woff"),
     url("fonts/untitled-font-1.ttf") format("truetype"),
     url("fonts/untitled-font-1.svg#untitled-font-1") format("svg");
@@ -41,26 +41,31 @@
 .icon-ibook-laptop:before {
   content: "\61";
 }
-
 .icon-phone:before {
   content: "\62";
 }
-
 .icon-computer-imac-2:before {
   content: "\63";
 }
-
 .icon-ipod-music-streamline:before {
   content: "\64";
 }
-
 .icon-clock:before {
   content: "\65";
 }
-
 .icon-gamepad:before {
   content: "\66";
 }
+.icon-phone-1:before {
+  content: "\67";
+}
+.icon-map-o:before {
+  content: "\68";
+}
+.icon-paper-airplane:before {
+  content: "\69";
+}
+
 
 ::-webkit-scrollbar-button {
 background-image:url('');
