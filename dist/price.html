@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:200,300,400,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<title>Прайс-Лист</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+
+	<header class="page-header">
+		<div class="page-header-wrapper">
+			<div class="container">
+				<div class="row align-items-baseline">
+					<div class="col-2 col-md-1 d-block d-lg-none">
+						<div class="mobile-menu">
+							<i class="fa fa-bars" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="col-md-2 col-3">
+						<a href="index.html">
+							<div class="top-logo">
+								<img src="img/logo.png" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="col-lg-8 col-12 ta-c top-navigation-wrapper flex-last flex-lg-unordered">
+						<nav class="top-navigation">
+							<ul>
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="#Srepairs">Ремонт</a></li>
+								<li><a href="#Sservice">Сервис</a></li>
+								<li class="active"><a href="price.html">Прайс-лист</a></li>
+								<li><a href="about.html">О нас</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="col-lg-2 col-md-4 offset-lg-0 offset-md-5 offset-sm-4">
+						<address>
+							<a href="tel:+79185555500"><i class="fa fa-phone" aria-hidden="true"></i> +7-918-555-55-00</a>
+						</address>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="page-other">
+		<section class="banner-show">
+			<div class="banner-show-img" style="background-image: url('img/bg-bunner-2.jpg'); background-size: cover;"></div>
+			<div class="container">
+				<div class="row">
+					<div class="banner-show-content col-xl-12 col-lg-8 offset-xl-0 offset-lg-2 col-12">
+						<h2>Прайс-Лист</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+		<section class="price-section">
+			<div class="container">
+				<div class="row no-gutters price-overflow">
+					<div class="col-xl-10 col-12 ma-c">
+						<div class="price-item-wrap">
+							<div class="price-item">
+								<ul id="pills-tab" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#noutbook" role="tab"
+											aria-controls="pills-home" aria-selected="true">Ноутбуки</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#smartphone" role="tab"
+											aria-controls="pills-profile" aria-selected="false">Смартфоны</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pc" role="tab"
+											aria-controls="pills-contact" aria-selected="false">Компьютеры</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#player" role="tab"
+											aria-controls="pills-contact" aria-selected="false">Медиаплееры</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#smartwatch" role="tab"
+											aria-controls="pills-contact" aria-selected="false">Смарт-часы</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#console" role="tab"
+											aria-controls="pills-contact" aria-selected="false">Приставки</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="price-wrapper" id="pills-tabContent">
+							<table class="price-table-head">
+								<thead>
+									<tr>
+										<th>Услуга</th>
+										<th>Время ремонта</th>
+										<th>Стоимость</th>
+										<th>Запись</th>
+									</tr>
+									</th>
+							</table>
+							<div class="tab-content" id="pills-tabContent">
+								<!-- noutbook -->
+								<div class="price-table-body-wrap tab-pane fade show active" id="noutbook" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление ОС, установка драйверов, антивируса и пакета программ на ноутбуке</td>
+												<td>от 1 дня</td>
+												<td>1200</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление работоспособности ОС windows на ноутбуке</td>
+												<td>от 1 дня</td>
+												<td>700</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена BGA чипа на материнской плате ноутбука</td>
+												<td>от 3 дней</td>
+												<td>от 3000</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена USB-разъема на ноутбуке (без учёта запчастей)</td>
+												<td>от 3 дней</td>
+												<td>от 1300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена вентилятора системы охлаждения ноутбука (без учёта запчастей)</td>
+												<td>от 1 дня</td>
+												<td>от 1000</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена матрицы на ноутбуке/нетбуке</td>
+												<td>от 4 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена/ремонт гнезда ноутбука (без учёта запчастей)</td>
+												<td>от 2 дней</td>
+												<td>1300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена/ремонт разъёма (гнезда) HDMI ноутбука</td>
+												<td>от 2 дней</td>
+												<td>1500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка BIOS в ноутбуке</td>
+												<td>от 1 дня</td>
+												<td>1300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка BIOS в моноблоке</td>
+												<td>от 1 дня</td>
+												<td>1500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Компонентный ремонт ноутбука</td>
+												<td>от 5 дней</td>
+												<td>2500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Чистка системы охлаждения ноутбука от пыли, с неполной разборкой</td>
+												<td>от 1 дня</td>
+												<td>600</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Чистка системы охлаждения ноутбука от пыли, с полной разборкой</td>
+												<td>от 1 дня</td>
+												<td>1000</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- smartphone -->
+								<div class="price-table-body-wrap tab-pane fade" id="smartphone" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена/ремонт гнезда зарядки планшета</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена/ремонт гнезда зарядки телефона</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка планшета</td>
+												<td>от 1 дня</td>
+												<td>от 600</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка телефона</td>
+												<td>от 1 дня</td>
+												<td>от 400</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Установка программ в планшетный компьютер</td>
+												<td>от 1 дня</td>
+												<td>400</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Установка/замена дисплея в телефоне</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Установка/замена тачскрина в планшете</td>
+												<td>от 1 дня</td>
+												<td>от 1000</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Установка/замена тачскрина в телефоне</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт после попадания жидкости</td>
+												<td>от 1 дня</td>
+												<td>от 1400</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- pc -->
+								<div class="price-table-body-wrap tab-pane fade" id="pc" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление ОС, установка драйверов, антивируса и пакета программ на ПК</td>
+												<td>От 1 дня</td>
+												<td>1200</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление работоспособности ОС windows на ПК</td>
+												<td>От 1 дня</td>
+												<td>700</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Диагностика (тестирование) жесткого диска и оперативной памяти ПК, на предмет ошибок</td>
+												<td>От 1 дня</td>
+												<td>300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена корпуса на ПК</td>
+												<td>От 1 дня</td>
+												<td>800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена термопасты на процессоре в ПК</td>
+												<td>От 1 часа</td>
+												<td>200</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Копирование данных заказчика с системного диска на другой логический диск, перед
+													переустановкой ОС</td>
+												<td>От 1 дня</td>
+												<td>300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Комплексная чистка ПК от пыли, с частичной разборкой и заменой термопасты</td>
+												<td>От 1 часа</td>
+												<td>500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт блока питания ПК</td>
+												<td>От 3 часа</td>
+												<td>от 300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт видеокарты ПК</td>
+												<td>От 3 часа</td>
+												<td>от 300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт материнской платы ПК</td>
+												<td>От 3 часа</td>
+												<td>от 500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Сборка ПК</td>
+												<td>От 4 часа</td>
+												<td>600</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Сложная очистка ОС от вирусов, всплывающих и рекламных окон</td>
+												<td>От 1 дня</td>
+												<td>800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Снятие пароля пользователя с Windows XP, Vista, 7, без переустановки ОС на ПК</td>
+												<td>От 1 часа</td>
+												<td>400</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Снятие/установка мат. платы ПК (без установки драйверов и переустановки ОС)</td>
+												<td>От 1 часа</td>
+												<td>500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Установка пакета офисных программ на ПК</td>
+												<td>От 1 часа</td>
+												<td>300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- player -->
+								<div class="price-table-body-wrap tab-pane fade" id="player" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена дисплея</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена сенсорного стекла</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена разъёма питания</td>
+												<td>от 1 дня</td>
+												<td>от 1000</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена разъёма наушников</td>
+												<td>от 1 дня</td>
+												<td>от 500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт микросхемы питания</td>
+												<td>от 1 дня</td>
+												<td>от 1100</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт flash микросхемы</td>
+												<td>от 1 дня</td>
+												<td>от 900</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Ремонт кнопки включения</td>
+												<td>от 1 дня</td>
+												<td>от 300</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка медиаплеера</td>
+												<td>от 1 дня</td>
+												<td>от 800</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- smartwatch -->
+								<div class="price-table-body-wrap tab-pane fade" id="smartwatch" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена стекла на смарт часах</td>
+												<td>от 30 минут</td>
+												<td>680</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Замена дисплея в сборе со стеклом</td>
+												<td>от 40 минут</td>
+												<td>950</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Разъем зарядки</td>
+												<td>от 60 минут</td>
+												<td>700</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Микрофон \ Динамик</td>
+												<td>от 50 минут</td>
+												<td>650</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Кнопка включения</td>
+												<td>от 45 минут</td>
+												<td>900</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Sim reader</td>
+												<td>от 90 минут</td>
+												<td>750</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Антенный модуль</td>
+												<td>от 40 минут</td>
+												<td>550</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Камера</td>
+												<td>от 50 минут</td>
+												<td>850</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Микросхема питания</td>
+												<td>от 45 минут</td>
+												<td>750</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Контроллер дисплея</td>
+												<td>от 40 минут</td>
+												<td>850</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Усилитель мощности передатчика</td>
+												<td>от 60 минут</td>
+												<td>950</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Контроллер гарнитуры</td>
+												<td>от 35 минут</td>
+												<td>550</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Микросхема управлением звуком</td>
+												<td>от 10 минут</td>
+												<td>650</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Модуль Wifi</td>
+												<td>от 45 минут</td>
+												<td>950</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Модуль Bluetooth</td>
+												<td>от 45 минут</td>
+												<td>850</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Вибро-мотор</td>
+												<td>от 30 минут</td>
+												<td>900</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка</td>
+												<td>от 20 минут</td>
+												<td>900</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление после удара \ воды</td>
+												<td>от 30 минут</td>
+												<td>700</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Восстановление после коррозии</td>
+												<td>от 50 минут</td>
+												<td>1100</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<!-- console -->
+								<div class="price-table-body-wrap tab-pane fade" id="console" role="tabpanel"
+									aria-labelledby="pills-home-tab">
+									<table class="price-table-body">
+										<tbody>
+											<tr>
+												<td>Диагностика</td>
+												<td></td>
+												<td>Бесплатно</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Привод</td>
+												<td>от 1 дня</td>
+												<td>от 3500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Шлейф привода</td>
+												<td>от 1 дня</td>
+												<td>от 1500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Драйвер управлением приводом</td>
+												<td>от 1 дня</td>
+												<td>от 2100</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Видеочип - GPU микросхема</td>
+												<td>от 1 дня</td>
+												<td>от 4500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Процессор – CPU микросхема</td>
+												<td>от 1 дня</td>
+												<td>от 4400</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Шим питания</td>
+												<td>от 1 дня</td>
+												<td>от 2500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>HDMI разъем</td>
+												<td>от 1 дня</td>
+												<td>от 1950</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Разъем тюльпана</td>
+												<td>от 1 дня</td>
+												<td>от 2750</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Жесткий диск 320GB</td>
+												<td>от 1 дня</td>
+												<td>от 5500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Прошивка</td>
+												<td>от 1 дня</td>
+												<td>950</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+											<tr>
+												<td>Чистка системы охлаждения с заменой термопасты</td>
+												<td>от 1 дня</td>
+												<td>1500</td>
+												<td><a href="#small-dialog" class="popup-with-zoom-anim btn btn-table">Записаться</a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+        </div>
+        <a href="price-list.xlsx" class="download-link">Скачать прайс-лист (*.xlsx)</a>
+        <p class="description-section">Ниже вы можете узнать больше о разных вариантах ценообразования и устройствах, с
+					которыми мы работаем. Обратите внимание, что ремонт обычно занимает более одного дня и зависит от вашего
+					устройства.</p>
+			</div>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-12 flex-last flex-lg-unordered">
+					<div class="bottom-logo">
+						<img src="img/logo.png" alt="">
+					</div>
+					<div class="about-txt">
+						<p>FixPC была основана опытной командой техников, которые знают, как заставить любой современный ПК или
+							гаджет работать правильно. С более чем 20-летним опытом вы всегда можете нам доверять.</p>
+					</div>
+					<div class="copyright">
+						<p>© 2019 FixPC. Все права защищены. <br>
+							<a href="#">Политика Конфиденциальности.</a> </p>
+					</div>
+				</div>
+				<div class="col-lg-8 col-12 pl-80">
+					<div class="row">
+						<div class="col-12">
+							<div class="subscribe">
+								<h3>Подписаться и быть в курсе</h3>
+								<form id="form-subscribe" class="form-subscribe">
+									<input type="email" name="email" id="sub-mail" required placeholder="E-mail">
+									<button type="submit" class="btn" form="form-subscribe">Подписаться</button>
+								</form>
+								<div id="rezult"></div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-12">
+							<h3>Контакты</h3>
+							<address>
+								<ul>
+									<li>
+										<span class="icon">
+											<i class="fa fa-location-arrow" aria-hidden="true"></i>
+										</span>
+										<span class="address"> г. Краснодар, ул. Северная, д. 399</span>
+									</li>
+									<li>
+										<span class="icon">
+											<i class="fa fa-phone" aria-hidden="true"></i>
+										</span>
+										<span class="address"><a href="tel:+79185555500"> +7-918-555-55-00</a></span>
+									</li>
+								</ul>
+							</address>
+						</div>
+						<div class="col-sm-6 col-12 social-wrap">
+							<h3>Мы в соц. сетях</h3>
+							<p>Следите за нами в соц. сетях, чтобы оставаться на связи и получать мгновенные обновления.</p>
+							<ul class="social">
+								<li><a href="https://vk.com"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+		<h1>Запись на ремонт</h1>
+		<form id="order">
+			<input type="text" name="name" id="name" required placeholder="Имя">
+			<input type="tel" name="phone" id="phone" required placeholder="Телефон">
+			<input type="text" name="usluga" id="usluga" hidden>
+			<textarea name="comment" id="comment" cols="30" rows="6" required
+				placeholder="Пожалуйста опишите вашу проблему"></textarea>
+		</form>
+		<div id="message-rezult">
+			<button type="submit" form="order" class="btn btn-submit">Записаться</button>
+		</div>
+	</div>
+	<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
