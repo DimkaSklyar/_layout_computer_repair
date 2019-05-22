@@ -6,6 +6,7 @@ $subject = 'Заказ'; //тема
 $message = '<span style="font-weight:bold;color:#ff6600;font-size:18px;"><i>Заказ!</i> </span><br><br> 
 Имя: <span style="font-weight:bold;color:#000;">'.$_POST['name'].'</span><br> 
 Телефон: <span style="font-weight:bold;color:#000;">'.$_POST['phone'].'</span><br>
+Телефон: <span style="font-weight:bold;color:#000;">'.$_POST['usluga'].'</span><br>
 Сообщение: <span style="font-weight:bold;color:#000;">'.$_POST['comment'].'</span><br>'; 
 $headers = "Content-type: text/html; charset=UTF-8 \r\n"; 
 $headers .= "From: info@my-site.ru\r\n"; // от кого, придумайте ящик или укажите почту своего сайта. 

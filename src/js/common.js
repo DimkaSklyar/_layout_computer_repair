@@ -104,8 +104,9 @@ $(document).ready(function () {
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
+          arrows: false,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -116,4 +117,24 @@ $(document).ready(function () {
     ]
   });
 
+});
+
+$(function(){
+  $("a[href^='#S']").click(function(){
+          var _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+30+"px"});
+          return false;
+  });
+});
+
+$(".repeirs-usluga").click(function () { 
+  $("#usluga").val($(this).find("h3").text());
+});
+
+$(".btn-table").click(function () { 
+  $("#usluga").val($(this).closest("tr").find("td:first").text());
+});
+
+$(".mobile-menu").click(function (e) { 
+  $(".top-navigation-wrapper").slideToggle("menu-active");
 });
